@@ -3,13 +3,18 @@
     "version": "0.0.1",
     "main": "src/index.js",
     "scripts": {
-        "dev": "node_modules/webpack/bin/webpack.js --progress --config build/webpack.config.js",
+        "dev": "node_modules/webpack/bin/webpack.js --progress --config webpack.config.js",
+        "start": "cd sampleapp && npm run start",
         "build": "node build/build.js",
+        "watch": "npm run dev & onchange 'src/**/*.js' -- npm run dev",
+        "watch:test": "onchange 'src/**/*.ts' '*.ts' -- npm run test",
+        "test": "cd sampleapp && npm run test",
         "build-docs": "node build/build-docs.js",
         "build-main": "node build/build-main.js",
-        "init": "vue init webpack sampleapp"
+        "init-sample": "vue init webpack sampleapp"
     },
     "dependencies": {
+        "js-brasil": "^2.0.5",
         "vue": "^2.5.13"
     },
     "devDependencies": {
@@ -28,21 +33,21 @@
         "file-loader": "^1.1.4",
         "friendly-errors-webpack-plugin": "^1.6.1",
         "html-webpack-plugin": "^2.30.1",
-        "webpack-bundle-analyzer": "^2.9.0",
         "node-notifier": "^5.1.2",
+        "optimize-css-assets-webpack-plugin": "^3.2.0",
+        "portfinder": "^1.0.13",
         "postcss-import": "^11.0.0",
         "postcss-loader": "^2.0.8",
         "postcss-url": "^7.2.1",
         "semver": "^5.3.0",
         "shelljs": "^0.7.6",
-        "optimize-css-assets-webpack-plugin": "^3.2.0",
         "uglifyjs-webpack-plugin": "^1.1.1",
         "url-loader": "^0.5.8",
         "vue-loader": "^13.3.0",
         "vue-style-loader": "^3.0.1",
         "vue-template-compiler": "^2.5.2",
-        "portfinder": "^1.0.13",
-        "webpack": "^3.6.0",
+        "webpack": "^3.12.0",
+        "webpack-bundle-analyzer": "^2.9.0",
         "webpack-dev-server": "^2.9.1",
         "webpack-merge": "^4.1.0"
     }

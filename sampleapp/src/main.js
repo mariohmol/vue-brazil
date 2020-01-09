@@ -3,8 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+// import VueBrazil from '../../dist/vue-brazil.min.js'
+import VueBrazil from '../../src'
+console.log(VueBrazil)
 Vue.config.productionTip = false
+Vue.use(VueBrazil)
 
 /* eslint-disable no-new */
 new Vue({
