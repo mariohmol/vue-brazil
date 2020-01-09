@@ -119,6 +119,8 @@ curl -o- -L https://yarnpkg.com/install.sh | bash
 yarn global add @vue/cli-init
 npm install --global @vue/cli
 npm i
+cd sampleapp
+npm i
 ```
 
 Para iniciar o processo de desenvolvimento:
