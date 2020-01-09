@@ -1,0 +1,80 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn global add @vue/cli-init
+
+PATH: 
+  /Users/mariohmol/.rvm/gems/ruby-2.0.0-p598/bin:/Users/mariohmol/.rvm/gems/ruby-2.0.0-p598@global/bin:/Users/mariohmol/.rvm/rubies/ruby-2.0.0-p598/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/local/mysql/lib:/usr/local/MacGPG2/bin:/opt/X11/bin:/Users/mariohmol/.rvm/gems/ruby-2.0.0-p598/bin:/Users/mariohmol/.rvm/gems/ruby-2.0.0-p598@global/bin:/Users/mariohmol/.rvm/rubies/ruby-2.0.0-p598/bin:/opt/local/bin:/opt/local/sbin:/Users/mariohmol/projetos/android-sdk-macosx/tools:/Users/mariohmol/projetos/android-sdk-macosx:/Users/mariohmol/projetos/android-sdk-macosx/platform-tools:/Users/mariohmol/.rvm/bin:/Users/mariohmol/Library/Android/sdk/tools:/Users/mariohmol/Library/Android/sdk/platform-tools:/Users/mariohmol/.npm-packages/bin:/Users/mariohmol/projetos/android-sdk-macosx/build-tools/19.1.0/:/Users/mariohmol/.rvm/gems/ruby-2.0.0-p598/bin:/Users/mariohmol/.rvm/gems/ruby-2.0.0-p598@global/bin:/Users/mariohmol/.rvm/rubies/ruby-2.0.0-p598/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/local/mysql/lib:/opt/X11/bin:/usr/local/MacGPG2/bin:/Users/mariohmol/projetos/android-sdk-macosx/tools:/Users/mariohmol/projetos/android-sdk-macosx:/Users/mariohmol/projetos/android-sdk-macosx/platform-tools:/Users/mariohmol/.rvm/bin:/Users/mariohmol/Library/Android/sdk/tools:/Users/mariohmol/Library/Android/sdk/platform-tools:/Users/mariohmol/.npm-packages/bin:/Users/mariohmol/projetos/android-sdk-macosx/build-tools/19.1.0/
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  12.2.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+      "name": "vue-brazil",
+      "version": "0.0.1",
+      "main": "src/index.js",
+      "scripts": {
+          "dev": "node_modules/webpack/bin/webpack.js --progress --config build/webpack.config.js",
+          "build": "node build/build.js",
+          "build-docs": "node build/build-docs.js",
+          "build-main": "node build/build-main.js",
+          "init": "vue init webpack sampleapp"
+      },
+      "dependencies": {
+          "vue": "^2.5.13",
+          "preview-component": "git+https://git@github.com/neoighodaro-articles/Vue-Slack-Preview.git",
+      },
+      "devDependencies": {
+          "babel-core": "^6.22.1",
+          "babel-helper-vue-jsx-merge-props": "^2.0.3",
+          "babel-loader": "^7.1.1",
+          "babel-plugin-syntax-jsx": "^6.18.0",
+          "babel-plugin-transform-runtime": "^6.22.0",
+          "babel-plugin-transform-vue-jsx": "^3.5.0",
+          "babel-preset-env": "^1.3.2",
+          "babel-preset-stage-2": "^6.22.0",
+          "chalk": "^2.0.1",
+          "copy-webpack-plugin": "^4.0.1",
+          "css-loader": "^0.28.0",
+          "extract-text-webpack-plugin": "^3.0.0",
+          "file-loader": "^1.1.4",
+          "friendly-errors-webpack-plugin": "^1.6.1",
+          "html-webpack-plugin": "^2.30.1",
+          "webpack-bundle-analyzer": "^2.9.0",
+          "node-notifier": "^5.1.2",
+          "postcss-import": "^11.0.0",
+          "postcss-loader": "^2.0.8",
+          "postcss-url": "^7.2.1",
+          "semver": "^5.3.0",
+          "shelljs": "^0.7.6",
+          "optimize-css-assets-webpack-plugin": "^3.2.0",
+          "uglifyjs-webpack-plugin": "^1.1.1",
+          "url-loader": "^0.5.8",
+          "vue-loader": "^13.3.0",
+          "vue-style-loader": "^3.0.1",
+          "vue-template-compiler": "^2.5.2",
+          "portfinder": "^1.0.13",
+          "webpack": "^3.6.0",
+          "webpack-dev-server": "^2.9.1",
+          "webpack-merge": "^4.1.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/mariohmol/projetos/vue-brazil/package.json: Unexpected token } in JSON at position 541
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1036:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13
