@@ -1,6 +1,6 @@
 {
     "name": "vue-brazil",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "main": "src/index.js",
     "scripts": {
         "dev": "node_modules/webpack/bin/webpack.js --progress --config webpack.config.js",
@@ -9,6 +9,7 @@
         "build": "node build/build.js",
         "watch": "npm run dev & onchange 'src/**/*.js' -- npm run dev",
         "watch:test": "onchange 'src/**/*.ts' '*.ts' -- npm run test",
+        "dist": "npm run dev && cp -R src/* dist/",
         "test": "cd sampleapp && npm run test",
         "build-docs": "node build/build-docs.js",
         "build-main": "node build/build-main.js",

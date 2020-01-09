@@ -4,8 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 // import VueBrazil from '../../dist/vue-brazil.min.js'
-import VueBrazil from '../../src'
-console.log(VueBrazil)
+// import VueBrazil from '../../src'
+import VueBrazil from 'vue-brazil'
+
 Vue.config.productionTip = false
 Vue.use(VueBrazil)
 

@@ -4,7 +4,7 @@ Commons and utils in vue for brazillian apps
 
 Javascript Validate, Mask, Faker e Utils para Tipos do Brasil: 
 Celular, CEP, Certidão, CNH, CNPJ, CNS, CPF, Currency, Date, ECT, EMAIL, Empresa, Endereço, Inscrição Estadual, 
-Number, Percentage, Pessoa, PIS/PASEP, Placa de carro, Processo da justiça, RENAVAM , RG , 
+Number, Percentage, Pessoa, PIS/PASEP, placa (Placa de carro), processo (Processo da justiça), RENAVAM , RG , 
 Site, Telefone , Time (data/hora), Título de Eleitor , Veículo
 
 
