@@ -1,97 +1,121 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Filtros</h2>
+    <h2>Filtros / Masks</h2>
     <ul class="block">
       <li>
-        celular: {{ DATA.celular | vueBrazil('celular') }}
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>celular</h2>
+        {{ DATA.celular | vueBrazil("celular") }}
+        <input v-brazilmask="{ type: 'celular' }" />
       </li>
+      <hr />
       <li>
-         cep: {{ DATA.cep | vueBrazil('cep') }}
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>cep</h2>
+        {{ DATA.cep | vueBrazil("cep") }}
+        <input v-brazilmask="{ type: 'cep' }" />
       </li>
+      <hr />
       <li>
-         certidao: {{ DATA.certidao | vueBrazil('certidao') }}
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>certidao</h2>
+        {{ DATA.certidao | vueBrazil("certidao") }}
+        <input v-brazilmask="{ type: 'certidao' }" />
       </li>
+      <hr />
       <li>
-         cnh: {{ DATA.cnh | vueBrazil('cnh') }}
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>cnh</h2>
+        {{ DATA.cnh | vueBrazil("cnh") }}
+        <input v-brazilmask="{ type: 'cnh' }" />
       </li>
+      <hr />
       <li>
-         cpf: {{ DATA.cpf | vueBrazil('cpf') }}
-          <vue-brazil-mask></vue-brazil-mask>
-          <br/>
-          cpfNumber: {{ DATA.cpfNumber | vueBrazil('cpf') }}
+        <h2>cpf</h2>
+        {{ DATA.cpf | vueBrazil("cpf") }} ,
+        {{ DATA.cpfNumber | vueBrazil("cpf") }}
+        <input v-brazilmask="{ type: 'cpf' }" />
+        <br />
       </li>
+      <hr />
       <li>
-         currency: {{ DATA.currency | vueBrazil('currency') }}
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>currency</h2>
+        {{ DATA.currency | vueBrazil("currency") }}
+        <input v-brazilmask="{ type: 'currency' }" />
       </li>
+      <hr />
+      <!-- <li>
+         date:  DATA.date | vueBrazil('date'
+          <input v-brazilmask="{ type: 'cpf' }" />
+      </li> -->
+      <!-- <hr/> -->
+      <!-- <li>
+         ect:  DATA.ect | vueBrazil('ect')
+          <input v-brazilmask="{ type: 'cpf' }" />
+      </li>
+        <hr/>
+       -->
       <li>
-         <!-- date:  DATA.date | vueBrazil('date') -->
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>number</h2>
+        {{ DATA.number | vueBrazil("number") }}
+        <input v-brazilmask="{ type: 'number' }" />
       </li>
+      <hr />
       <li>
-         <!-- ect:  DATA.ect | vueBrazil('ect')  -->
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>percentage</h2>
+        {{ DATA.number | vueBrazil("porcentagem") }}
+        <input v-brazilmask="{ type: 'percentage' }" />
       </li>
+      <hr />
+      <!-- <li>
+         pis:  DATA.pis | vueBrazil('pis')
+          <input v-brazilmask="{ type: 'pis' }" />
+      </li>
+      <hr/> -->
       <li>
-         number: {{ DATA.number | vueBrazil('number') }}
-          <vue-brazil-mask></vue-brazil-mask>
-      </li>
+        <h2>placa</h2>
+        {{ DATA.placa | vueBrazil("placa") }}
+        <input v-brazilmask="{ type: 'placa' }" />
+      </li><!--
+        <hr/>
+        <li>
+         <h2> processo</h2>
+          {{ DATA.processo | vueBrazil('processo') }}
+          <input v-brazilmask="{ type: 'processo' }" />
+      </li> -->
+      <hr />
       <li>
-         percentage: {{ DATA.number | vueBrazil('porcentagem') }}
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>renavam</h2>
+        {{ DATA.renavam | vueBrazil("renavam") }}
+        <input v-brazilmask="{ type: 'renavam' }" />
       </li>
+      <hr />
       <li>
-         <!-- pis:  DATA.pis | vueBrazil('pis') -->
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>rg</h2>
+        {{ DATA.rg | vueBrazil("rg") }}
+        <input v-brazilmask="{ type: 'rg' }" />
       </li>
+      <hr />
       <li>
-         placa: {{ DATA.placa | vueBrazil('placa') }}
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>telefone</h2>
+        {{ DATA.telefone | vueBrazil("telefone") }}
+        <input v-brazilmask="{ type: 'telefone' }" />
       </li>
+      <hr />
       <li>
-         <!-- processo: {{ DATA.processo | vueBrazil('processo') }} -->
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>time</h2>
+        {{ DATA.time | vueBrazil("time") }}
+        <input v-brazilmask="{ type: 'time' }" />
       </li>
+      <hr />
       <li>
-         renavam: {{ DATA.renavam | vueBrazil('renavam') }}
-          <vue-brazil-mask></vue-brazil-mask>
+        <h2>titulo</h2>
+        {{ DATA.titulo | vueBrazil("titulo") }}
+        <input v-brazilmask="{ type: 'titulo' }" />
       </li>
-      <li>
-         rg: {{ DATA.rg | vueBrazil('rg') }}
-          <vue-brazil-mask></vue-brazil-mask>
-      </li>
-      <li>
-         telefone: {{ DATA.telefone | vueBrazil('telefone') }}
-          <vue-brazil-mask></vue-brazil-mask>
-      </li>
-      <li>
-         time: {{ DATA.time | vueBrazil('time') }}
-          <vue-brazil-mask></vue-brazil-mask>
-      </li>
-      <li>
-         titulo: {{ DATA.titulo | vueBrazil('titulo') }}
-          <vue-brazil-mask></vue-brazil-mask>
-      </li>
-
+      <hr />
     </ul>
-    <h2>Masks</h2>
-    <ul>
-
-      <li>
-        TODO
-      </li>
-    </ul>
-
     <h2>Validate</h2>
     <ul>
-      <li>
-        TODO
-      </li>
+      <li>TODO</li>
+      <hr />
     </ul>
   </div>
 </template>
@@ -114,7 +138,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {

@@ -61,7 +61,9 @@ inscricaoestadual iptu,
 number, porcentagem pispasep, placa, processo, renavam, rg, sped,
 telefone time, titulo, utils
 
-## Filters
+Vejam todos e updates em [JSBrasil](https://github.com/mariohmol/js-brasil)
+
+## Filters / Masks
 
 Para usar um filtro faça ``` {{ valor | vueBrazil(tipo) }}  ```
 
@@ -72,6 +74,9 @@ Veja um exemplo completo:
   <div class="hello">
     CPF: {{ cpf | vueBrazil('cpf') }} 
     <!-- será exibido 123.456.789.01 --->
+
+     <input v-brazilmask="{ type: 'cpf' }" />
+     <!-- criará uma máscara no input exibindo  123.___.___.__ --->
   </div>
 </template>
 
