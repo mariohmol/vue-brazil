@@ -1,4 +1,4 @@
-# samplevuebrazil
+# sampleapp2
 
 > A Vue.js project
 

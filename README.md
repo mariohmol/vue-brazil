@@ -125,17 +125,20 @@ yarn global add @vue/cli-init
 npm install --global @vue/cli
 ```
 
-Fork esse repositório, clone em sua máquina e instale as dependencias: 
+Fork esse repositório, clone em sua máquina e instale as dependencias, na pasta raiz e na sampleapp: 
 ```
+npm i
 cd sampleapp
 npm i
 ```
 
 Para iniciar o processo de desenvolvimento:
 ```sh
-npm run watch
 npm run start
 ```
+
+Para publicar nova versão,é necessárioincrementara versao no [package](./package.json) e rodar 
+`npm run publishnpm`
 
 
 # License

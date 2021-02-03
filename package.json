@@ -1,22 +1,22 @@
 {
     "name": "vue-brazil",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "main": "src/index.js",
     "scripts": {
         "dev": "node_modules/webpack/bin/webpack.js --progress --config webpack.config.js",
         "installall": "npm i && cd sampleapp && npm i ",
         "start": "cd sampleapp && npm run start",
-        "build": "node build/build.js",
         "watch": "npm run dev & onchange 'src/**/*.js' -- npm run dev",
         "watch:test": "onchange 'src/**/*.ts' '*.ts' -- npm run test",
         "dist": "npm run dev && cp -R src/* dist/",
         "test": "cd sampleapp && npm run test",
         "build-docs": "node build/build-docs.js",
         "build-main": "node build/build-main.js",
-        "init-sample": "vue init webpack sampleapp"
+        "init-sample": "vue init webpack sampleapp",
+        "publishnpm": "npm run dist && npm publish"
     },
     "dependencies": {
-        "js-brasil": "^2.0.5",
+        "js-brasil": "^2.3.14",
         "vue": "^2.5.13"
     },
     "devDependencies": {
@@ -50,6 +50,7 @@
         "vue-template-compiler": "^2.5.2",
         "webpack": "^3.12.0",
         "webpack-bundle-analyzer": "^3.6.0",
+        "webpack-cli": "^4.5.0",
         "webpack-dev-server": ">=3.1.11",
         "webpack-merge": "^4.1.0"
     }

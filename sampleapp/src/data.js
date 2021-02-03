@@ -1,6 +1,7 @@
 
 export const DATA = {
   cpf: '156.631.881-50',
+  cpfNumber: 15663188150,
   cnpj: '40.841.253/0001-02',
   cep: '31.234-567',
   currency: 'R$ 1.234,56',

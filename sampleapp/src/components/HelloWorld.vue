@@ -22,6 +22,8 @@
       <li>
          cpf: {{ DATA.cpf | vueBrazil('cpf') }}
           <vue-brazil-mask></vue-brazil-mask>
+          <br/>
+          cpfNumber: {{ DATA.cpfNumber | vueBrazil('cpf') }}
       </li>
       <li>
          currency: {{ DATA.currency | vueBrazil('currency') }}
