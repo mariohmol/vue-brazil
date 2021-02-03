@@ -10,17 +10,13 @@ Site, Telefone , Time (data/hora), Título de Eleitor , Veículo
 
 ## Live example:  
 
-* https://stackblitz.com/edit/vue-brazil (TODO)
-
-This project was tested integrated with the following techs:
-
-* vue
+* https://stackblitz.com/edit/vue-brazil
 
 
-See the demo working project:
+See the demo working project in [sampleapp](./sampleapp) folder.:
 
 
-![Demo Image](/sampleapp/src/assets/print.png)
+![Demo Image](./sampleapp/src/assets/print.png)
 
 
 ## Installation
