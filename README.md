@@ -59,40 +59,58 @@ telefone time, titulo, utils
 
 Vejam todos e updates em [JSBrasil](https://github.com/mariohmol/js-brasil)
 
-## Filters / Masks
+## Filters / Masks / Forms
 
 Para usar um filtro faça ``` {{ valor | vueBrazil(tipo) }}  ```
+Para usar mask use ``` <input v-brazilmask="{ type: 'cpf' }" id="titulo" name="titulo" />```
+Para validação, 
 
-Veja um exemplo completo:
+Veja um exemplo completo: use no método checkForm JSBrazilValidate(e, this.errors)
 
 ```html
 <template>
   <div class="hello">
-    CPF: {{ cpf | vueBrazil('cpf') }} 
-    <!-- será exibido 123.456.789.01 --->
-
-     <input v-brazilmask="{ type: 'cpf' }" />
-     <!-- criará uma máscara no input exibindo  123.___.___.__ --->
+    <form @submit="checkForm" action="#/" method="post">
+      CPF: {{ cpf | vueBrazil('cpf') }} 
+      <!-- será exibido 123.456.789.01 --->
+      <input v-brazilmask="{ type: 'cpf' }" id="titulo" name="titulo" />
+      <!-- criará uma máscara no input exibindo  123.___.___.__ --->
+      <p v-if="errors.length">
+        <b>Please correct the following error(s):</b>
+        <ul>
+          <li v-bind:key="error" v-for="error in errors">{{ error }}</li>
+        </ul>
+        <!-- exibirá um erro `cpf inválido` , o nome `cpf` ele pegará do id ou name do input --->
+      </p>
+      <button>Submit</button>
   </div>
 </template>
 
 <script>
+import { JSBrazilValidate } from 'vue-brazil'
 export default {
   name: 'Vue-Brazil',
+    methods: {
+    checkForm: function (e) {
+      this.errors = []
+      // Put your own logic here
+      // if(!wrong){
+      //   this.errors.push('Name required.')
+      // }
+      // Get the JsBrasil validations
+      JSBrazilValidate(e, this.errors)
+      e.preventDefault()
+    }
+  },
   data () {
     return {
-      cpf: '12345678901'
+      cpf: '12345678901',
+      errors: []
     }
   }
 }
 </script>
 ```
-
-#### Using Masks
-TODO
-
-## Forms and Mask
-TODO
 
 # Demo
 
