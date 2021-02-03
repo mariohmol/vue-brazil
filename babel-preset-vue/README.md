@@ -27,7 +27,7 @@ Example:
 Vue.component('hello-world', {
   methods: {
     method () {
-      console.log('clicked')
+      console.info('clicked')
     }
   },
   render () {

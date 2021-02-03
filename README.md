@@ -112,13 +112,21 @@ Tem várias issues para trabalha e ajudar no projeto.
 
 ## Contribute
 
-Para ajudar no projeto, fork esse repositório e para instalar o Ambiente:
+Ajude também! Fork o projeto e siga os passos abaixo para montar o ambiente.
 
+Instale o yarn:
 ```sh
 curl -o- -L https://yarnpkg.com/install.sh | bash
+```
+
+Instale o vuejs
+```
 yarn global add @vue/cli-init
 npm install --global @vue/cli
-npm i
+```
+
+Fork esse repositório, clone em sua máquina e instale as dependencias: 
+```
 cd sampleapp
 npm i
 ```
