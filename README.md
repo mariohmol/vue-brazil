@@ -59,13 +59,18 @@ telefone time, titulo, utils
 
 Vejam todos e updates em [JSBrasil](https://github.com/mariohmol/js-brasil)
 
-## Filters / Masks / Forms
+----
 
-Para usar um filtro faça ``` {{ valor | vueBrazil(tipo) }}  ```
-Para usar mask use ``` <input v-brazilmask="{ type: 'cpf' }" id="titulo" name="titulo" />```
-Para validação, 
+## Filters / Masks / Forms / Validation
 
-Veja um exemplo completo: use no método checkForm JSBrazilValidate(e, this.errors)
+
+**Filters** : Para usar um filtro faça ``` {{ valor | vueBrazil(tipo) }}  ```
+
+**Mask** : Para usar mask use ``` <input v-brazilmask="{ type: 'cpf' }" />```
+
+**Validation** : Para validação, marque o input como data-brtype ```<input v-brazilmask="{ type: 'cpf' }" data-brtype="cpf" id="cpf" name="cpf" />```, depois use no método checkForm JSBrazilValidate(e, this.errors)
+
+Veja um exemplo completo: 
 
 ```html
 <template>
@@ -73,7 +78,7 @@ Veja um exemplo completo: use no método checkForm JSBrazilValidate(e, this.erro
     <form @submit="checkForm" action="#/" method="post">
       CPF: {{ cpf | vueBrazil('cpf') }} 
       <!-- será exibido 123.456.789.01 --->
-      <input v-brazilmask="{ type: 'cpf' }" id="titulo" name="titulo" />
+      <input v-brazilmask="{ type: 'cpf' }" data-brtype="cpf" id="cpf" name="cpf" />
       <!-- criará uma máscara no input exibindo  123.___.___.__ --->
       <p v-if="errors.length">
         <b>Please correct the following error(s):</b>
