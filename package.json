@@ -1,6 +1,6 @@
 {
     "name": "vue-brazil",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "main": "src/index.js",
     "scripts": {
         "dev": "node_modules/webpack/bin/webpack.js --progress --config webpack.config.js",
@@ -16,7 +16,7 @@
         "publishnpm": "npm run dist && npm publish"
     },
     "dependencies": {
-        "js-brasil": "^2.3.14",
+        "js-brasil": "^2.5.3",
         "vue": "^2.5.13"
     },
     "devDependencies": {
@@ -36,6 +36,7 @@
         "friendly-errors-webpack-plugin": "^1.6.1",
         "html-webpack-plugin": "^2.30.1",
         "node-notifier": ">=8.0.1",
+        "onchange": "^7.1.0",
         "optimize-css-assets-webpack-plugin": "^3.2.0",
         "portfinder": "^1.0.13",
         "postcss-import": "^11.0.0",

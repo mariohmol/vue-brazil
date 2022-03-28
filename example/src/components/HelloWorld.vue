@@ -43,18 +43,36 @@
           <input v-brazilmask="{ type: 'currency' }" data-brtype="currency" id="currency" name="currency"/>
         </li>
         <hr />
-        <!-- <li>
+        <li>
+          <h2>data</h2>
+        {{ DATA.date | vueBrazil('data') }}
+          <input v-brazilmask="{ type: 'data' }" data-brtype="data" id="date" name="date"/>
+        </li>
+        <hr/>
+        <li>
           <h2>date</h2>
-         DATA.date | vueBrazil('date'
+        {{ DATA.date | vueBrazil('date') }}
           <input v-brazilmask="{ type: 'date' }" data-brtype="date" id="date" name="date"/>
         </li>
         <hr/>
         <li>
+          <h2>datetime</h2>
+        {{ DATA.date | vueBrazil('datetime') }}
+          <input v-brazilmask="{ type: 'datetime' }" data-brtype="datetime" id="date" name="date"/>
+        </li>
+        <hr/>
+        <li>
+          <h2>datahora</h2>
+        {{ DATA.date | vueBrazil('datahora') }}
+          <input v-brazilmask="{ type: 'datahora' }" data-brtype="datahora" id="date" name="date"/>
+        </li>
+        <hr/>
+        <li>
           <h2>ect</h2>
-          DATA.ect | vueBrazil('ect')
+        {{  DATA.ect | vueBrazil('ect') }}
             <input v-brazilmask="{ type: 'ect' }" data-brtype="ect" id="ect" name="ect"/>
         </li>
-        <hr/> -->
+        <hr/>
         <li>
           <h2>number</h2>
           {{ DATA.number | vueBrazil("number") }}

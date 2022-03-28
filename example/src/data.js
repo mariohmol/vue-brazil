@@ -8,6 +8,10 @@ export const DATA = {
   cnpj: '40.841.253/0001-02',
   cep: '31.234-567',
   currency: 'R$ 1.234,56',
+  data: '12/01/2020',
+  datahora: '12/01/2020 10:20',
+  date: '12/01/2020',
+  datetime: '12/01/2020 10:20',
   inscricaoestadual: {
     ac: '01.004.823/001-12',
     al: '240000048',

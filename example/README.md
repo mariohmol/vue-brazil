@@ -1,4 +1,4 @@
-# sampleapp2
+# example
 
 > A Vue.js project
 
